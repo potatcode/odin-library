@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Odin's Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Library</h1>
+        <img id="addBook" class="button" src="./svg/plus.svg"/>
+    </div>
+
+    <div class="content">
+        <ol class="library">
+            <li class="table-header">
+                <p>Title</p>
+                <p>Author</p>
+                <p>Pages</p>
+                <p>Read</p>
+                <p>Actions</p>
+            </li>
+        </ol>
+    </div>
+
+    <dialog>
+        <h2>Add a book</h2>
+        <form method="dialog">
+            <div class="form-input">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="bookTitle">
+            </div>
+            <div class="form-input">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="bookAuthor">
+            </div>
+            <div class="form-input">
+                <label for="bookPageCount">Page Count</label>
+                <input type="text" name="bookPageCount" id="bookPageCount">
+            </div>
+
+            <div class="form-buttons">
+                <button type="reset">Cancel</button>
+                <button id="submitBook">Save</button>
+            </div>
+        </form>
+      </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
